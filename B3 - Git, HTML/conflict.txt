@@ -1,1 +1,2 @@
 Master Conflic. B make Conflic
+Master Conflic. A make Conflic
