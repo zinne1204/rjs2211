@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @font-face {
+        font-family: Lobster-Regular;
+        src: url('./font/Lobster-Regular.ttf');
+      }
+        #title {
+            color: blue;
+            font-family: 'La Belle Aurore', cursive;
+        }
+
+        #name {
+            color: red;
+            font-family: 'Lobster-Regular';
+        }
+
+        #content {
+            color: blueviolet;
+        }
+
+        p,
+        span {
+            color: burlywood;
+        }
+
+
+        .parent {
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+        }
+
+        .parent>h3 {
+            color: red;
+        }
+
+        li:nth-child(2) {
+            background: lightgreen;
+        }
+
+        .half-width {
+            width: 900px;
+            background-color: #f1480c;
+            height: 100px;
+        }
+
+        #test-rem1 {
+            height: 100px;
+            width: 20rem;
+            background-color: rgb(255, 0, 0);
+        }
+
+        #test-em {
+            height: 100px;
+            width: 20em;
+            font-size: 2px;
+            background-color: red;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">This is H1</h1>
+    <h2 id="name">This is H2</h2>
+    <h3 id="content">This is H3</h3>
+    <p class="blue-color">This is p1</p>
+    <span class="blue-color">This is span</span>
+    <div class="offline-font">Div out side</div>
+    <div class="parent">
+        <h3>Child 1</h3>
+        <div>
+            <h3>Cháu</h3>
+        </div>
+    </div>
+    <ul>
+        <li>First list item</li>
+        <li>Second list item</li>
+        <li>Third list item</li>
+        <li>Fourth list item</li>
+        <li>Fifth list item</li>
+    </ul>
+    <div class="half-width">lorem500</div>
+    <div class="parent2">
+        <div id="test-rem1">test-rem1</div>
+        <div id="test-em">test-em2</div>
+    </div>
+
+</body>
+
+</html>
